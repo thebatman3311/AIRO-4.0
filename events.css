@@ -291,7 +291,7 @@
 /* Card Styles */
 .card-1 {
   width: 210px;
-  height: 200px;
+  height: 230px;
   background: #07182E;
   position: relative;
   display: flex;
@@ -343,13 +343,13 @@
 }
 
   .card-1-btn {
-      width: 10rem;
-      height: 2rem;
+      width: 12rem;
+      height: 3rem;
       font-size: 9px;
   }
 
   .card-1-btn strong {
-      font-size: 9px;
+      font-size: 15px;
   }
 
   .card-1-glow {
