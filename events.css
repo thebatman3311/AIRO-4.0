@@ -103,11 +103,11 @@
 
 .card-1-btn strong {
   z-index: 2;
-  font-family: 'Avalors Personal Use';
-  font-size: 12px;
+  font-family: "Architects Daughter", cursive;
+  font-size: 15px;
   letter-spacing: 5px;
   color: #FFFFFF;
-  text-shadow: 0 0 4px white;
+  /* text-shadow: 0 0 4px white; */
 }
 
 .card-1-glow {

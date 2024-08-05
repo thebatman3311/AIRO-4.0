@@ -1,3 +1,9 @@
+/* .timmana-regular {
+    font-family: "Timmana", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+   */
 .about-department {
     display: flex;
     align-items: center;
@@ -28,20 +34,18 @@
     text-align: center;
 }
 
-.department-content h2 {
-    font-size: 36px;
-    color: white;
-    margin-bottom: 20px;
-}
-
 .department-description {
+    font-family: "Timmana", sans-serif;
+    font-size: 20px;
     text-align: left;
     color: white;
 }
 
 .department-description h3 {
     margin-bottom: 15px;
-    color: white;
+    color: rgb(255, 255, 255);
+    letter-spacing: 5px;
+    font-size: 30px;
 }
 
 .department-description p {
