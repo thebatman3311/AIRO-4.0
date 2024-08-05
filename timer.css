@@ -29,7 +29,7 @@ h1 strong {
   color: #ea4c4c;
 }
 
-h2 {
+.card-1 h2 {
   margin-bottom: 80px;  
   text-align: center;  
   font: 300 0.7em 'Lato'; 

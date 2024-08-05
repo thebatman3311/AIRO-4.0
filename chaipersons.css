@@ -1,3 +1,9 @@
+.chairHeading{
+  color: white;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
 .chairpersons{
     position: relative;
     left: -85px;
