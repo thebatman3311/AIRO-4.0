@@ -1,8 +1,9 @@
 .chairHeading{
+  margin-top: 20px;
   color: white;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .staffHeading{
@@ -11,24 +12,31 @@
   margin-top: 90px;
 }
 
-.studentHeading{
+.overallHeading{
   text-transform: uppercase;
-  margin-top: 80px;
+  margin-top: 90px;
   text-align: center;
+}
+
+.studentCoordinators{
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 90px;
 }
 
 .webDevelopers{
   color: white;
   text-align: center;
   text-transform: uppercase;
-  margin-top: 80px;
+  margin-top: 90px;
 }
 
 .mediaHeading{
   color: white;
   text-align: center;
   text-transform: uppercase;
-  margin-top: 80px;
+  margin-top: 90px;
 }
 
 .chairpersons{
@@ -39,39 +47,53 @@
     grid-template-columns: repeat(3,1fr);
 }
 
-.chairpersons-2{
+.staffcoordinator{
     margin-top: -20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -420px;
 }
 
-.studentcoordinators{
+.overallcoordinators{
+  margin-top: -20px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
 }
 
+.studentcoordinators{
+  margin-top: -20px;
+  row-gap: 30px;
+  position: relative;
+  left: -85px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(3,1fr);
+}
+
 .webdevelopers{
+  margin-top: -20px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
 }
 
 .mediateam{
+  margin-top: -20px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
 }
 
-.chairpersons-2 .chair-card:nth-child(1), .studentcoordinators .chair-card:nth-child(1), .webdevelopers .chair-card:nth-child(1), .mediateam .chair-card:nth-child(1)
+.overallcoordinators .chair-card:nth-child(1), .webdevelopers .chair-card:nth-child(1), .mediateam .chair-card:nth-child(1)
 {
-  margin-left: 190px;
+  margin-left: 220px;
 }
 
-.chairpersons-2 .chair-card:nth-child(2), .studentcoordinators .chair-card:nth-child(2), .webdevelopers .chair-card:nth-child(2), .mediateam .chair-card:nth-child(2)
+.overallcoordinators .chair-card:nth-child(2), .webdevelopers .chair-card:nth-child(2), .mediateam .chair-card:nth-child(2)
 {
-  margin-left: -150px;
+  margin-left: -130px;
 }
 
 .chair-card {
@@ -171,10 +193,24 @@
   .chairpersons{
     display: flex;
     flex-direction: column;
-    margin-top: -80px;
+    margin-top: -50px;
   }
 
-  .chairpersons-2{
+  .studentcoordinators{
+    display: flex;
+    flex-direction: column;
+    margin-top: -50px;
+  }
+
+  .staffcoordinator{
+    margin-top: -60px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: -19px;
+  }
+
+  .overallcoordinators, .webdevelopers, .mediateam{
     margin-top: -60px;
     display: flex;
     flex-direction: column;
@@ -182,20 +218,12 @@
     left: -114px;
   }
 
-  .studentcoordinators, .webdevelopers, .mediateam{
-    margin-top: -60px;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    left: -114px;
-  }
-
-  .chairpersons-2 .chair-card:nth-child(1), .studentcoordinators .chair-card:nth-child(1), .webdevelopers .chair-card:nth-child(1), .mediateam .chair-card:nth-child(1)
+  .staffcoordinator .chair-card:nth-child(1), .overallcoordinators .chair-card:nth-child(1), .webdevelopers .chair-card:nth-child(1), .mediateam .chair-card:nth-child(1)
   {
     margin-left: 0px;
   }
   
-  .chairpersons-2 .chair-card:nth-child(2), .studentcoordinators .chair-card:nth-child(2), .webdevelopers .chair-card:nth-child(2), .mediateam .chair-card:nth-child(2)
+  .staffcoordinator .chair-card:nth-child(2), .overallcoordinators .chair-card:nth-child(2), .webdevelopers .chair-card:nth-child(2), .mediateam .chair-card:nth-child(2)
   {
     margin-left: 0px;
   }
