@@ -90,19 +90,23 @@
 
     .department-content h2 {
         font-size: 24px;
+        text-align: center;
     }
 
     .department-description h3 {
         font-size: 18px;
+        text-align: center;
     }
 
     .department-description p {
         font-size: 14px;
+        text-align: center;
     }
 }
 
 
 .schedules{
+    margin-top: 60px;
     margin-left:6%;
     margin-right:6%;
     border-radius: 30px;
