@@ -1,7 +1,14 @@
 .chairHeading{
   color: white;
   text-align: center;
+  text-transform: uppercase;
   margin-bottom: 30px;
+}
+
+.staffHeading{
+  color: white;
+  text-align: center;
+  margin-top: 90px;
 }
 
 .chairpersons{
@@ -13,10 +20,19 @@
 }
 
 .chairpersons-2{
-    margin-top: 50px;
+    margin-top: -20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
+}
+
+.chairpersons-2 .chair-card:nth-child(1){
+  margin-left: 190px;
+}
+
+.chairpersons-2 .chair-card:nth-child(2)
+{
+  margin-left: -150px;
 }
 
 .chair-card {
@@ -120,10 +136,20 @@
   }
 
   .chairpersons-2{
+    margin-top: -60px;
     display: flex;
     flex-direction: column;
     position: relative;
-    left: -84px;
+    left: -114px;
+  }
+
+  .chairpersons-2 .chair-card:nth-child(1){
+    margin-left: 0px;
+  }
+  
+  .chairpersons-2 .chair-card:nth-child(2)
+  {
+    margin-left: 0px;
   }
 
   .chair-card {
