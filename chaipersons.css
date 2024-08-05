@@ -17,6 +17,20 @@
   text-align: center;
 }
 
+.webDevelopers{
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 80px;
+}
+
+.mediaHeading{
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 80px;
+}
+
 .chairpersons{
     position: relative;
     left: -85px;
@@ -32,18 +46,30 @@
     grid-template-rows: 1fr;
 }
 
-.studentCoordinators{
+.studentcoordinators{
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
 }
 
-.chairpersons-2 .chair-card:nth-child(1), .studentCoordinators .chair-card:nth-child(1)
+.webdevelopers{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.mediateam{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.chairpersons-2 .chair-card:nth-child(1), .studentcoordinators .chair-card:nth-child(1), .webdevelopers .chair-card:nth-child(1), .mediateam .chair-card:nth-child(1)
 {
   margin-left: 190px;
 }
 
-.chairpersons-2 .chair-card:nth-child(2), .studentCoordinators .chair-card:nth-child(2)
+.chairpersons-2 .chair-card:nth-child(2), .studentcoordinators .chair-card:nth-child(2), .webdevelopers .chair-card:nth-child(2), .mediateam .chair-card:nth-child(2)
 {
   margin-left: -150px;
 }
@@ -156,11 +182,20 @@
     left: -114px;
   }
 
-  .chairpersons-2 .chair-card:nth-child(1){
+  .studentcoordinators, .webdevelopers, .mediateam{
+    margin-top: -60px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: -114px;
+  }
+
+  .chairpersons-2 .chair-card:nth-child(1), .studentcoordinators .chair-card:nth-child(1), .webdevelopers .chair-card:nth-child(1), .mediateam .chair-card:nth-child(1)
+  {
     margin-left: 0px;
   }
   
-  .chairpersons-2 .chair-card:nth-child(2)
+  .chairpersons-2 .chair-card:nth-child(2), .studentcoordinators .chair-card:nth-child(2), .webdevelopers .chair-card:nth-child(2), .mediateam .chair-card:nth-child(2)
   {
     margin-left: 0px;
   }
