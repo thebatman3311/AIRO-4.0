@@ -42,9 +42,3 @@ const getTimeRemaining = () => {
 
 getTimeRemaining();
 setInterval(getTimeRemaining, 1000);
-
-function speak() {
-  var text = "register";
-  var utterance = new SpeechSynthesisUtterance(text);
-  speechSynthesis.speak(utterance);
-}
