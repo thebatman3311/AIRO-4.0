@@ -49,9 +49,8 @@
   font-family: "Solway", serif;
     position: relative;
     left: -85px;
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: repeat(3,1fr);
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .staffcoordinator{
@@ -66,9 +65,8 @@
 .overallcoordinators{
   font-family: "Solway", serif;
   margin-top: -20px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .studentcoordinators{
@@ -77,28 +75,25 @@
   row-gap: 30px;
   position: relative;
   left: -85px;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: repeat(3,1fr);
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .webdevelopers{
   font-family: "Solway", serif;
   margin-top: -20px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .mediateam{
   font-family: "Solway", serif;
   margin-top: -20px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.overallcoordinators .chair-card:nth-child(1), .webdevelopers .chair-card:nth-child(1), .mediateam .chair-card:nth-child(1)
+/* .overallcoordinators .chair-card:nth-child(1), .webdevelopers .chair-card:nth-child(1), .mediateam .chair-card:nth-child(1)
 {
   margin-left: 220px;
 }
@@ -106,7 +101,7 @@
 .overallcoordinators .chair-card:nth-child(2), .webdevelopers .chair-card:nth-child(2), .mediateam .chair-card:nth-child(2)
 {
   margin-left: -130px;
-}
+} */
 
 .chair-card {
     position: relative;
