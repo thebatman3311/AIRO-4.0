@@ -147,6 +147,13 @@
     padding: 20px;
 }
 
+.faq-container h1{
+    color: white;
+    text-align: center;
+    font: 300 2.25em 'Lato';
+    text-transform: uppercase;
+}
+
 .faq-content a{
     text-decoration: none;
     font-size: large;
@@ -313,6 +320,11 @@ footer {
 }
 
 @media (max-width: 480px) {
+
+    .faq-container h1{
+        text-align: center;
+    }
+
     .footer-container {
         grid-template-columns: 1fr;
         text-align: center;
