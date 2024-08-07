@@ -161,40 +161,6 @@ body, html {
     justify-content: center;
     align-items: center;
   }
-  
-  @media (max-width: 768px) {
-    .navbar {
-      flex-direction: column;
-      align-items: flex-start;
-      padding: 10px 20px;
-    }
-
-    .navbar .logo {
-      margin-bottom: 10px;
-      font-size: 20px;
-    }
-
-    .navbar ul {
-      flex-direction: row;
-      width: 100%;
-      justify-content: space-between;
-      padding-right: 0;
-    }
-
-    .navbar ul li {
-      margin: 0 5px;
-    }
-
-    .btn {
-      font-size: 14px;
-      height: 40px;
-      padding: 0.5em 1em;
-    }
-
-    .container {
-      padding: 0 10px;
-    }
-  }
 
   @media (max-width: 480px) {
     #navLinks{
