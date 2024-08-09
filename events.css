@@ -1,217 +1,322 @@
 .container-1 {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-style: italic;
-  font-weight: bold;
+  color: white;
+  /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding: 5em;
+  padding: 2.5em;
 }
 
 .container-2{
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-style: italic;
-  font-weight: bold;
+  color: white;
+  /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding: 5em;
+  padding: 2.5em;
 }
 
-/* Card Styles */
-/* From Uiverse.io by JaydipPrajapati1910 */ 
+.container-3{
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2.5em;
+}
+
 .card-1 {
+  text-align: left;
   display:flex;
-  justify-content:space-evenly;
-  flex-direction:column;
-  align-items:center;
-    width: 200px;
-    height: 250px;
-    border: none;
-    border-radius: 10px;
-    background: url(https://www.pixelstalk.net/wp-content/uploads/image10/Nature-photo-HD-with-Lavender-field-under-a-golden-sunset-vibrant-purple-flowers-tranquil-scene.jpg);
-    background-blend-mode: normal, normal, screen, overlay, normal;
-    box-shadow: 0px 0px 10px 1px #000000;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 300px;
+  height: 300px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 1px #000000;
+}
+
+.card-1 h2{
+  text-transform: uppercase;
+  font-family: "Timmana", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  z-index: 100;
+}
+
+.card-1 .btn-1 {
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10rem;
+  overflow: hidden;
+  height: 3rem;
+  background-size: 300% 300%;
+  cursor: pointer;
+  backdrop-filter: blur(1rem);
+  border-radius: 5rem;
+  transition: 0.5s;
+  animation: gradient_301 5s ease infinite;
+  border: double 4px transparent;
+  background-image: linear-gradient(#212121, #212121),
+    linear-gradient(
+      137.48deg,
+      #ffdb3b 10%,
+      #fe53bb 45%,
+      #8f51ea 67%,
+      #0044ff 87%
+    );
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+.card-1 #container-stars {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transition: 0.5s;
+  backdrop-filter: blur(1rem);
+  border-radius: 5rem;
+}
+
+.card-1 strong {
+  z-index: 2;
+  font-family: "Avalors Personal Use";
+  font-size: 16px;
+  letter-spacing: 2px;
+  color: #ffffff;
+  text-shadow: 0 0 4px white;
+}
+
+.card-1 #glow {
+  position: absolute;
+  display: flex;
+  width: 12rem;
+}
+
+.card-1 .circle {
+  width: 100%;
+  height: 30px;
+  filter: blur(2rem);
+  animation: pulse_3011 4s infinite;
+  z-index: -1;
+}
+
+.card-1 .circle:nth-of-type(1) {
+  background: rgba(254, 83, 186, 0.636);
+}
+
+.card-1 .circle:nth-of-type(2) {
+  background: rgba(142, 81, 234, 0.704);
+}
+
+.card-1 .btn-1:hover #container-stars {
+  z-index: 1;
+  background-color: #212121;
+}
+
+.card-1 .btn-1:hover {
+  transform: scale(1.1);
+}
+
+.card-1 .btn-1:active {
+  border: double 4px #fe53bb;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  animation: none;
+}
+
+.card-1 .btn-1:active .circle {
+  background: #fe53bb;
+}
+
+.card-1 #stars {
+  position: relative;
+  background: transparent;
+  width: 200rem;
+  height: 200rem;
+}
+
+.card-1 #stars::after {
+  content: "";
+  position: absolute;
+  top: -10rem;
+  left: -100rem;
+  width: 100%;
+  height: 100%;
+  animation: animStarRotate 90s linear infinite;
+}
+
+.card-1 #stars::after {
+  background-image: radial-gradient(#ffffff 1px, transparent 1%);
+  background-size: 50px 50px;
+}
+
+.card-1 #stars::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 170%;
+  height: 500%;
+  animation: animStar 60s linear infinite;
+}
+
+.card-1 #stars::before {
+  background-image: radial-gradient(#ffffff 1px, transparent 1%);
+  background-size: 50px 50px;
+  opacity: 0.5;
+}
+
+@keyframes animStar {
+  from {
+    transform: translateY(0);
   }
-  
-  .card-1 h2{
-  text-align:center;
+
+  to {
+    transform: translateY(-135rem);
   }
-  
-  .card-1 .btn-1 {
+}
+
+@keyframes animStarRotate {
+  from {
+    transform: rotate(360deg);
+  }
+
+  to {
+    transform: rotate(0);
+  }
+}
+
+@keyframes gradient_301 {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes pulse_3011 {
+  0% {
+    transform: scale(0.75);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+  }
+
+  100% {
+    transform: scale(0.75);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
+
+.card-1 h2, .card-1 .btn-1 {
+  position: relative;
+  z-index: 10; 
+}
+
+.card-1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('Coders Assemble.png');
+  background-size: cover;
+  /* z-index: -1;  */
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.container-1 .card-1:nth-child(1)
+{
+  backdrop-filter: blur();
+  background-image: url(Coders\ Assemble.png);
+  background-size: cover;
+}
+
+.container-1 .card-1:nth-child(2)
+{
+  backdrop-filter: blur(10px);
+  background-image: url(Asgardian\ Auction\ House.jpg);
+  background-size: cover;
+}
+
+.container-1 .card-1:nth-child(3)
+{
+  backdrop-filter: blur(10px);
+  background-image: url(SpiderTech\ Web.jpg);
+  background-size: cover;
+}
+
+.container-2 .card-1:nth-child(1)
+{
+  backdrop-filter: blur(10px);
+  background-image: url(Infinity\ Models.jpg);
+  background-size: cover;
+}
+
+.container-2 .card-1:nth-child(2)
+{
+  backdrop-filter: blur(10px);
+  background-image: url(Multiverse\ Of\ Madness.jpg);
+  background-size: cover;
+}
+
+.container-3 .card-1:nth-child(1)
+{
+  backdrop-filter: blur(10px);
+  background-image: url(Prompt\ With\ Wakanda.jpg);
+  background-size: cover;
+}
+
+.container-3 .card-1:nth-child(2)
+{
+  backdrop-filter: blur(10px);
+  background-image: url(Dead\ Fold.jpg);
+  background-size: cover;
+}
+
+.container-3 .card-1:nth-child(3)
+{
+  backdrop-filter: blur(10px);
+  background-image: url(Gen\ AI\ Forge.jpg);
+  background-size: cover;
+}
+
+@media (max-width:480px)
+{
+  .container-1{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 10rem;
-    overflow: hidden;
-    height: 3rem;
-    background-size: 300% 300%;
-    cursor: pointer;
-    backdrop-filter: blur(1rem);
-    border-radius: 5rem;
-    transition: 0.5s;
-    animation: gradient_301 5s ease infinite;
-    border: double 4px transparent;
-    background-image: linear-gradient(#212121, #212121),
-      linear-gradient(
-        137.48deg,
-        #ffdb3b 10%,
-        #fe53bb 45%,
-        #8f51ea 67%,
-        #0044ff 87%
-      );
-    background-origin: border-box;
-    background-clip: content-box, border-box;
+    flex-direction: column;
   }
-  
-  .card-1 #container-stars {
-    position: absolute;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    transition: 0.5s;
-    backdrop-filter: blur(1rem);
-    border-radius: 5rem;
+
+  .container-2{
+    margin-top: -80px;
+    display:flex;
+    flex-direction: column;
   }
-  
-  .card-1 strong {
-    z-index: 2;
-    font-family: "Avalors Personal Use";
-    font-size: 12px;
-    letter-spacing: 5px;
-    color: #ffffff;
-    text-shadow: 0 0 4px white;
-  }
-  
-  .card-1 #glow {
-    position: absolute;
+
+  .container-3{
+    margin-top: -80px;
     display: flex;
-    width: 12rem;
+    flex-direction: column;
   }
-  
-  .card-1 .circle {
-    width: 100%;
-    height: 30px;
-    filter: blur(2rem);
-    animation: pulse_3011 4s infinite;
-    z-index: -1;
+
+  .card-1{
+    margin-top: 20px;
   }
-  
-  .card-1 .circle:nth-of-type(1) {
-    background: rgba(254, 83, 186, 0.636);
-  }
-  
-  .circle:nth-of-type(2) {
-    background: rgba(142, 81, 234, 0.704);
-  }
-  
-  .card-1 .btn-1:hover #container-stars {
-    z-index: 1;
-    background-color: #212121;
-  }
-  
-  .card-1 .btn-1:hover {
-    transform: scale(1.1);
-  }
-  
-  .card-1 .btn-1:active {
-    border: double 4px #fe53bb;
-    background-origin: border-box;
-    background-clip: content-box, border-box;
-    animation: none;
-  }
-  
-  .card-1 .btn-1:active .circle {
-    background: #fe53bb;
-  }
-  
-  .card-1 #stars {
-    position: relative;
-    background: transparent;
-    width: 200rem;
-    height: 200rem;
-  }
-  
-  .card-1 #stars::after {
-    content: "";
-    position: absolute;
-    top: -10rem;
-    left: -100rem;
-    width: 100%;
-    height: 100%;
-    animation: animStarRotate 90s linear infinite;
-  }
-  
-  .card-1 #stars::after {
-    background-image: radial-gradient(#ffffff 1px, transparent 1%);
-    background-size: 50px 50px;
-  }
-  
-  .card-1 #stars::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -50%;
-    width: 170%;
-    height: 500%;
-    animation: animStar 60s linear infinite;
-  }
-  
-  .card-1 #stars::before {
-    background-image: radial-gradient(#ffffff 1px, transparent 1%);
-    background-size: 50px 50px;
-    opacity: 0.5;
-  }
-  
-  @keyframes animStar {
-    from {
-      transform: translateY(0);
-    }
-  
-    to {
-      transform: translateY(-135rem);
-    }
-  }
-  
-  @keyframes animStarRotate {
-    from {
-      transform: rotate(360deg);
-    }
-  
-    to {
-      transform: rotate(0);
-    }
-  }
-  
-  @keyframes gradient_301 {
-    0% {
-      background-position: 0% 50%;
-    }
-  
-    50% {
-      background-position: 100% 50%;
-    }
-  
-    100% {
-      background-position: 0% 50%;
-    }
-  }
-  
-  @keyframes pulse_3011 {
-    0% {
-      transform: scale(0.75);
-      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
-    }
-  
-    70% {
-      transform: scale(1);
-      box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
-    }
-  
-    100% {
-      transform: scale(0.75);
-      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-    }
-  }
-  
+}
