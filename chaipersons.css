@@ -118,6 +118,18 @@
   transition: box-shadow .3s ease, transform .2s ease;
 }
 
+.chairpersons .chair-card:nth-child(1):hover .chair-card-social, .chairpersons .chair-card:nth-child(3):hover .chair-card-social
+{
+  transform: translateY(10px);
+  opacity: 1;
+}
+
+.mediateam .chair-card:nth-child(1):hover .chair-card-social
+{
+  transform: translateY(10px);
+  opacity: 1;
+}
+
 .chair-card-info {
   display: flex;
   flex-direction: column;
@@ -285,5 +297,11 @@
   
   .chair-card-social__item {
       margin: 4px 0;
+  }
+
+  .chairpersons .chair-card:nth-child(3):hover .chair-card-social
+  {
+    transform: translateY(100%);
+    opacity: 1;
   }
 }
