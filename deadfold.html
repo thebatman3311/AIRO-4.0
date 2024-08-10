@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rapid AI</title>
+    <title>Dead Fold</title>
     <link rel="stylesheet" href="deadfold.css">
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
 </head>
 <body>
     <!-- Background Video -->
-    <video autoplay muted loop id="background-video">
+    <video muted loop id="background-video">
         <source src="Dead Fold.mp4" type="video/mp4">
         Your browser does not support HTML5 video.
     </video>
 
     <!-- Background Audio -->
-    <audio autoplay loop>
+    <audio loop id="background-audio">
         <source src="Dead Fold.mp3" type="audio/mp3">
         Your browser does not support HTML5 audio.
     </audio>
@@ -26,24 +26,24 @@
         </div>
         <div class="right">
             <div class="heading-reg">
-            <h1>SpiderTech Web</h1>
+            <h1>Dead Fold</h1>
             <button id="register-button" onclick="window.location.href='deadform.html'">Register Now</button>
             </div>
-            <p id="description"><h2>Where Quick Thinking meets Swift Coding! </h2><br>Explore the cutting edge of web development at SpiderTech Web! Join us for an exciting symposium that delves into the latest innovations and trends in the digital realm. This event is crafted to provide a comprehensive overview of modern web technologies, from groundbreaking frameworks to the newest tools shaping the industry. SpiderTech Web is more than just a learning experience—it's an opportunity to immerse yourself in the evolving world of web development. Engage in dynamic presentations, attend interactive sessions, and gain practical knowledge that you can apply immediately. Discover strategies to enhance user experiences, streamline development processes, and leverage emerging technologies. Whether you're looking to refine your skills or explore new avenues in tech, SpiderTech Web offers a platform for growth and discovery.</p>
-            <h2>Guidelines/Rules</h2>
+            <p id="description"><h2>Where Quick Thinking meets Swift Coding! </h2><br>This event is designed to bring joy and excitement to all participants. It 
+                features a variety of engaging activities and games that encourage laughter, 
+                camaraderie, and a spirited atmosphere. The event emphasizes teamwork, 
+                communication, and trust as the participants work together to achieve their 
+                goal.</p>
+            <h2 class="section-title">Rules & Regulations</h2>
             <ol id="guidelines">
-                <li>Each team must consist of exactly 3 members. </li>
-                <li>team will be provided with a basic, static webpage as the starting point.</li>
-                <li>Transform the provided static webpage into an advanced and dynamic webpage using the platform provided(Visual Studio Code).</li>
-                <li>Participants do not need to bring their own laptops. Computers will be provided for use during the event.</li>
-                <li>The event will be held within a specified time limit. The exact duration will be communicated prior to the event.</li>
-                <li>During the event, teams will be given specific tasks or challenges that must be completed. These tasks are designed to test various aspects of web development.</li>
-                <li>Tasks must be completed in sequence and integrated into the final webpage. Failure to complete a task may affect the overall score.</li>
-                <li>Teams are allowed to use any technology or framework compatible with the provided platform. However, any external libraries or plugins must be pre-approved by the event organizers.</li>
-                <li>Teams can use AI tools like ChatGPT, Gemini, etc,... to build the webpages.</li>
-                <li>The final webpage should be functional, user-friendly, and visually appealing. Adherence to modern web design standards is encouraged.</li>
-                <li>Teams may be disqualified for violating any of the event rules, including unsportsmanlike conduct, or unauthorized use of external resources like github.</li>
+                <li><strong>Team Composition:</strong> Each team must contain only 2 members.</li>
+                <li><strong>No External Help:</strong> No external help or communication devices are allowed during the event.</li>
+                <li><strong>Disqualification:</strong> Any team found receiving outside assistance will be disqualified.</li>
+                <li><strong>Rule Modifications:</strong> The event organisers reserve the right to modify the rules and format if necessary.</li>
+                <li><strong>Behaviour:</strong> Any form of inappropriate behaviour, including arguing, cheating, or disrupting the event, will result in immediate disqualification.</li>
+                <li><strong>Scoring:</strong> Points will be awarded based on performance, teamwork, and adherence to the event's spirit. Teams with the highest scores will be declared the winners.</li>
             </ol>
+            
             <p><strong>Venue:</strong> <span id="venue">INTEL Lab - A block, First Floor</span></p>
             <div>
                 <center>
@@ -65,4 +65,38 @@
         </div>
     </div>
 </body>
+<script>
+    window.addEventListener('load', () => {
+        const video = document.getElementById('background-video');
+        const audio = document.getElementById('background-audio');
+
+        let videoReady = false;
+        let audioReady = false;
+
+        // Function to check if both video and audio are ready to play
+        const checkAndPlay = () => {
+            if (videoReady && audioReady) {
+                video.play().catch(error => {
+                    console.log("Video playback was prevented. Error:", error);
+                });
+                audio.play().catch(error => {
+                    console.log("Audio playback was prevented. Error:", error);
+                });
+            }
+        };
+
+        // Event listener for when the video can play through
+        video.addEventListener('canplaythrough', () => {
+            videoReady = true;
+            checkAndPlay();
+        });
+
+        // Event listener for when the audio can play through
+        audio.addEventListener('canplaythrough', () => {
+            audioReady = true;
+            checkAndPlay();
+        });
+    });
+</script>
+
 </html>

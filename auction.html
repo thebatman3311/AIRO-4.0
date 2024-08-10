@@ -10,13 +10,13 @@
 </head>
 <body>
     <!-- Background Video -->
-    <video autoplay muted loop id="background-video">
+    <video muted loop id="background-video">
         <source src="Asgard.mp4" type="video/mp4">
         Your browser does not support HTML5 video.
     </video>
 
     <!-- Background Audio -->
-    <audio autoplay loop>
+    <audio loop id="background-audio">
         <source src="Asgard.mp3" type="audio/mp3">
         Your browser does not support HTML5 audio.
     </audio>
@@ -44,7 +44,7 @@
             </ol>
         
             <h2 class="section-title">Rules & Regulations</h2>
-            <ol>
+            <ol id="guidelines">
                 <li><strong>Team Composition:</strong> Each team must consist of 3-4 members.</li>
                 <li><strong>Initial Funds:</strong> Each team will be allocated a set amount of rupees to bid on candidates. No additional funds will be provided, so plan your strategy carefully.</li>
                 <li><strong>Candidate Showcase:</strong> Candidates will be presented in a card format, displaying their role, experience, and base price. These cards will be revealed 1-2 days before the event to give teams ample time to strategize.</li>
@@ -86,12 +86,36 @@
     </div>
 </body>
 <script>
-    // Attempt to play audio once the page is loaded
     window.addEventListener('load', () => {
+        const video = document.getElementById('background-video');
         const audio = document.getElementById('background-audio');
-        audio.play().catch(error => {
-            console.log("Audio playback was prevented. User interaction is needed.");
+
+        let videoReady = false;
+        let audioReady = false;
+
+        const checkAndPlay = () => {
+            if (videoReady && audioReady) {
+                video.play().catch(error => {
+                    console.log("Video playback was prevented. Error:", error);
+                });
+                audio.play().catch(error => {
+                    console.log("Audio playback was prevented. Error:", error);
+                });
+            }
+        };
+
+        video.addEventListener('canplaythrough', () => {
+            videoReady = true;
+            checkAndPlay();
+        });
+
+        audio.addEventListener('canplaythrough', () => {
+            audioReady = true;
+            checkAndPlay();
         });
     });
 </script>
+
+
+
 </html>
