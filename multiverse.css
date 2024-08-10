@@ -18,7 +18,7 @@ body {
     flex-direction: column;
 }
 .container {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.5);
     position: relative;
     z-index: 2;
     display: flex;
@@ -39,6 +39,17 @@ body {
 ::-webkit-scrollbar {
     display: none;
 }
+
+#background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Ensures the video is behind the content */
+    object-fit: cover;
+}
+
 
 .left {
     display: flex;
@@ -62,7 +73,7 @@ body {
 }
 
 #guidelines {
-    color: skyblue;
+    color: rgb(255, 255, 255);
     text-wrap: stable;
     font-size: large;
 }
@@ -223,16 +234,29 @@ body {
     justify-content: space-evenly;
 }
 
-.contact > div > div {
+.contact > div {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
 }
+
+/* .contact > div > div {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+} */
 
 @media (max-width: 480px) {
     .container {
         display: flex;
         flex-direction: column;
+    }
+
+    .left img{
+        width: 100%;
+        height: fit-content;
     }
 
     .contact{

@@ -9,14 +9,26 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
 </head>
 <body>
+    <!-- Background Video -->
+    <video autoplay muted loop id="background-video">
+        <source src="Asgard.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+
+    <!-- Background Audio -->
+    <audio autoplay loop>
+        <source src="Asgard.mp3" type="audio/mp3">
+        Your browser does not support HTML5 audio.
+    </audio>
+
     <div class="container">
         <div class="left">
             <img src="Asgardian Auction House.jpg" alt="Event Image">
         </div>
         <div class="right">
             <div class="heading-reg">
-            <h1>Asgardian Auction House</h1>
-            <button id="register-button" onclick="window.location.href='auctionform.html'">Register Now</button>
+                <h1>Asgardian Auction House</h1>
+                <button id="register-button" onclick="window.location.href='auctionform.html'">Register Now</button>
             </div>
             <p id="description">Join us at SpiderTech Web for a cutting-edge symposium on modern web technologies! Dive into the latest innovations, frameworks, and tools shaping the industry. Engage in dynamic presentations, interactive sessions, and gain practical knowledge to enhance user experiences and streamline development processes. Whether refining your skills or exploring new tech avenues, SpiderTech Web is your platform for growth and discovery.</p>
             <h2>Rounds Overview</h2>
@@ -59,18 +71,27 @@
                 </center>
             </div>
             <div class="contact">
-                    <div>
-                        <img src="nura.jpg" alt="" class="section"><h3>Arun Nehru.s</h3>
-                        <p>Email: <a href="mailto:kratos@greek.com">kratos@greek.com</a></p>
-                        <p>Phone: <a href="tel:+1234567890">+1234567890</a></p>
-                    </div>
-                    <div>
-                        <img src="nura.jpg" alt="" class="section"><h3>Arun Nehru.s</h3>
-                        <p>Email: <a href="mailto:kratos@greek.com">kratos@greek.com</a></p>
-                        <p>Phone: <a href="tel:+1234567890">+1234567890</a></p>
-                    </div>
+                <div>
+                    <img src="nura.jpg" alt="" class="section"><h3>Arun Nehru.s</h3>
+                    <p>Email: <a href="mailto:kratos@greek.com">kratos@greek.com</a></p>
+                    <p>Phone: <a href="tel:+1234567890">+1234567890</a></p>
+                </div>
+                <div>
+                    <img src="nura.jpg" alt="" class="section"><h3>Arun Nehru.s</h3>
+                    <p>Email: <a href="mailto:kratos@greek.com">kratos@greek.com</a></p>
+                    <p>Phone: <a href="tel:+1234567890">+1234567890</a></p>
+                </div>
             </div>
         </div>
     </div>
 </body>
+<script>
+    // Attempt to play audio once the page is loaded
+    window.addEventListener('load', () => {
+        const audio = document.getElementById('background-audio');
+        audio.play().catch(error => {
+            console.log("Audio playback was prevented. User interaction is needed.");
+        });
+    });
+</script>
 </html>
