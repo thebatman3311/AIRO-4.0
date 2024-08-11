@@ -10,13 +10,13 @@
 </head>
 <body>
     <!-- Background Video -->
-    <video muted id="background-video">
+    <video autoplay muted id="background-video">
         <source src="Asgard.mp4" type="video/mp4">
         Your browser does not support HTML5 video.
     </video>
 
     <!-- Background Audio -->
-    <audio id="background-audio">
+    <audio autoplay id="background-audio">
         <source src="Asgard.mp3" type="audio/mp3">
         Your browser does not support HTML5 audio.
     </audio>
@@ -84,29 +84,5 @@
             </div>
         </div>
     </div>
-    <script>
-        const video = document.getElementById('background-video');
-        const audio = document.getElementById('background-audio');
-    
-        let videoReady = false;
-        let audioReady = false;
-    
-        video.oncanplaythrough = function() {
-            videoReady = true;
-            playMedia();
-        };
-    
-        audio.oncanplaythrough = function() {
-            audioReady = true;
-            playMedia();
-        };
-    
-        function playMedia() {
-            if (videoReady && audioReady) {
-                video.play();
-                audio.play();
-            }
-        }
-    </script>
 </body>
 </html>
