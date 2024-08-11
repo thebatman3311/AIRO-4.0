@@ -10,13 +10,13 @@
 </head>
 <body>
     <!-- Background Video -->
-    <video muted loop id="background-video">
+    <video muted id="background-video">
         <source src="Asgard.mp4" type="video/mp4">
         Your browser does not support HTML5 video.
     </video>
 
     <!-- Background Audio -->
-    <audio loop id="background-audio">
+    <audio id="background-audio">
         <source src="Asgard.mp3" type="audio/mp3">
         Your browser does not support HTML5 audio.
     </audio>
@@ -84,38 +84,29 @@
             </div>
         </div>
     </div>
-</body>
-<script>
-    window.addEventListener('load', () => {
+    <script>
         const video = document.getElementById('background-video');
         const audio = document.getElementById('background-audio');
-
+    
         let videoReady = false;
         let audioReady = false;
-
-        const checkAndPlay = () => {
-            if (videoReady && audioReady) {
-                video.play().catch(error => {
-                    console.log("Video playback was prevented. Error:", error);
-                });
-                audio.play().catch(error => {
-                    console.log("Audio playback was prevented. Error:", error);
-                });
-            }
-        };
-
-        video.addEventListener('canplaythrough', () => {
+    
+        video.oncanplaythrough = function() {
             videoReady = true;
-            checkAndPlay();
-        });
-
-        audio.addEventListener('canplaythrough', () => {
+            playMedia();
+        };
+    
+        audio.oncanplaythrough = function() {
             audioReady = true;
-            checkAndPlay();
-        });
-    });
-</script>
-
-
-
+            playMedia();
+        };
+    
+        function playMedia() {
+            if (videoReady && audioReady) {
+                video.play();
+                audio.play();
+            }
+        }
+    </script>
+</body>
 </html>
