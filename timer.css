@@ -67,13 +67,18 @@ h2 strong {
 }
 
 @media (max-width: 480px) {
+
+  .event-h2{
+    margin-top: -20px;
+  }
+
   .countdown h2 {
     font-size: 24px;
     margin-bottom: 15px;
   }
 
   .countdown-timer {
-    margin-top: -80px;
+    margin-top: -20px;
     flex-direction: row;
     justify-content: space-evenly;
   }
