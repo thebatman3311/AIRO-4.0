@@ -27,7 +27,7 @@ svg {
   stroke-dasharray: 6% 29%;
   stroke-width: 5px;
   stroke-dashoffset: 0%;
-  animation: stroke-offset 5.5s infinite linear;
+  animation: stroke-offset 6s infinite linear;
   text-shadow: 0 0 8px #66e0ff, 0 0 16px #66e0ff, 0 0 24px #e366ff, 0 0 32px #e366ff;
 }
 
