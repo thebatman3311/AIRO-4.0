@@ -9,22 +9,35 @@
     <script src="form.js" defer></script>
 </head>
 <body>
+    <video autoplay muted loop id="background-video">
+        <source src="Spidertech Web.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+
+    <!-- Background Audio -->
+    <audio autoplay loop>
+        <source src="Spidertech Web.mp3" type="audio/mp3">
+        Your browser does not support HTML5 audio.
+    </audio>
     <div id="particles-js"></div>
     <div class="container">
       <form class="form" method="post" action="https://script.google.com/macros/s/AKfycbwHKf9CbsBLpHYblkzR45JHMBn_9WT0M8G89DeEfvK3Sz9P7KZ0J5G00n27mC2BFoPr/exec" name="contact-form">
         <p class="title">Register </p>
+        <label>
+            <input class="input" type="text" name="Team Name" placeholder="" required="">
+            <span>Team Name</span>
+        </label>
         <p class="titles">Team Member 1 </p>
-        <div class="flex">
+     
         <label>
             <input class="input" type="text" name="first-name-1" placeholder="" required="">
             <span>Firstname</span>
         </label>
 
-        <label>
+        <!-- <label>
             <input class="input" type="text" name="last-name-1" placeholder="" required="">
             <span>Lastname</span>
-        </label>
-        </div>  
+        </label> -->
             
     <label>
         <input class="input" type="email" name="email-1" placeholder="" required="">
@@ -48,17 +61,17 @@
       <span>College Name</span>
     </label>
     <p class="titles">Team Member 2 </p>
-    <div class="flex">
+    <!-- <div class="flex"> -->
       <label>
           <input class="input" type="text" name="first-name-2" placeholder="" required="">
           <span>Firstname</span>
       </label>
 
-      <label>
+      <!-- <label>
           <input class="input" type="text" name="last-name-2" placeholder="" required="">
           <span>Lastname</span>
       </label>
-      </div>  
+      </div>   -->
           
   <label>
       <input class="input" type="email" name="email-2" placeholder="" required="">
@@ -82,17 +95,17 @@
     <span>College Name</span>
   </label>
     <p class="titles">Team Member 3 </p>
-    <div class="flex">
+    <!-- <div class="flex"> -->
       <label>
           <input class="input" type="text" name="first-name-3" placeholder="" required="">
           <span>Firstname</span>
       </label>
 
-      <label>
+      <!-- <label>
           <input class="input" type="text" name="last-name-3" placeholder="" required="">
           <span>Lastname</span>
       </label>
-      </div>  
+      </div>   -->
           
   <label>
       <input class="input" type="email" name="email-3" placeholder="" required="">
@@ -115,7 +128,7 @@
     <input class="input" type="text" name="college-name-3" placeholder="" required="">
     <span>College Name</span>
   </label>
-  <input class="submit" type="submit" value="Submit" id="submit">
+  <input class="submit" onclick="window.location.href='thank3.html'" type="submit" value="Submit" id="submit">
       </form>
     </div>
     <script src="symbo.js"></script>

@@ -9,22 +9,32 @@
     <script src="auctionform.js" defer></script>
 </head>
 <body>
+    <video autoplay muted id="background-video">
+        <source src="Asgard.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+
+    <!-- Background Audio -->
+    <audio autoplay id="background-audio">
+        <source src="Asgard.mp3" type="audio/mp3">
+        Your browser does not support HTML5 audio.
+    </audio>
     <div id="particles-js"></div>
     <div class="container">
       <form class="form" method="post" action="https://script.google.com/macros/s/AKfycbxAqOhICG8J4_BiHmBThSbSLJ-QfqiLwjDtCypKSgCzHJaTqKIL0WS7FPHgvzuZVsLX/exec" name="contact-form">
         <p class="title">Register </p>
         <p class="titles">Team Member 1 </p>
-        <div class="flex">
+        <!-- <div class="flex"> -->
         <label>
             <input class="input" type="text" name="first-name-12" placeholder="" required="">
             <span>Firstname</span>
         </label>
 
-        <label>
+        <!-- <label>
             <input class="input" type="text" name="last-name-12" placeholder="" required="">m
             <span>Lastname</span>
         </label>
-        </div>  
+        </div>   -->
             
     <label>
         <input class="input" type="email" name="email-12" placeholder="" required="">
@@ -48,17 +58,17 @@
       <span>College Name</span>
     </label>
     <p class="titles">Team Member 2 </p>
-    <div class="flex">
+    <!-- <div class="flex"> -->
       <label>
           <input class="input" type="text" name="first-name-22" placeholder="" required="">
           <span>Firstname</span>
       </label>
 
-      <label>
+      <!-- <label>
           <input class="input" type="text" name="last-name-22" placeholder="" required="">
           <span>Lastname</span>
       </label>
-      </div>  
+      </div>   -->
           
   <label>
       <input class="input" type="email" name="email-22" placeholder="" required="">
@@ -82,17 +92,17 @@
     <span>College Name</span>
   </label>
     <p class="titles">Team Member 3 </p>
-    <div class="flex">
+    <!-- <div class="flex"> -->
       <label>
           <input class="input" type="text" name="first-name-32" placeholder="" required="">
           <span>Firstname</span>
       </label>
 
-      <label>
+      <!-- <label>
           <input class="input" type="text" name="last-name-32" placeholder="" required="">
           <span>Lastname</span>
       </label>
-      </div>  
+      </div>   -->
           
   <label>
       <input class="input" type="email" name="email-32" placeholder="" required="">
@@ -116,17 +126,17 @@
     <span>College Name</span>
   </label>
   <p class="titles">Team Member 4 </p>
-    <div class="flex">
+    <!-- <div class="flex"> -->
       <label>
           <input class="input" type="text" name="first-name-42" placeholder="">
           <span>Firstname</span>
       </label>
 
-      <label>
+      <!-- <label>
           <input class="input" type="text" name="last-name-42" placeholder="">
           <span>Lastname</span>
       </label>
-      </div>  
+      </div>   -->
           
   <label>
       <input class="input" type="email" name="email-42" placeholder="">
@@ -149,7 +159,7 @@
     <input class="input" type="text" name="college-name-42" placeholder="">
     <span>College Name</span>
   </label>
-  <input class="submit" type="submit" value="Submit" id="submit">
+  <input class="submit" type="submit" onclick="window.location.href='thank2.html'" value="Submit" id="submit">
       </form>
     </div>
     <script src="auctionform.js"></script>
