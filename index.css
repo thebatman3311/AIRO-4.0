@@ -178,10 +178,12 @@ body, html {
 }
 
 .faq-container h1{
-    color: white;
+
     text-align: center;
     font: 300 2.25em 'Lato';
     text-transform: uppercase;
+    font-family: "Solway", serif;
+    color: white;
 }
 
 .faq-content a{
@@ -423,12 +425,46 @@ footer {
   }
 
 
+  #hackerText1 {
+    
+    padding-left: 10px;
+    margin-bottom: 20px;
+     width: 100%;
+     font-family: "Solway", serif;
+   color: white;
+  display: block;
+  
+  align-items: center;
+  justify-content: center;
+     text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 40px #00ff00;
+     animation: flicker 1.5s infinite alternate;
+   }
+   @keyframes flicker {
+     0% {
+       opacity: 1;
+       text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 40px #00ff00;
+     }
+     50% {
+       opacity: 0.5;
+       text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 50px #00ff00;
+     }
+     100% {
+       opacity: 1;
+       text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 40px #00ff00;
+     }
+   }
+
 #hackerText {
+   padding-top: 40px;
+   padding-left: 10px;
+    width: 100%;
     font-family: "Solway", serif;
   color: white;
- 
+ display: block;
   position: absolute;
-  z-index: -1;
+  z-index: +1;
+ align-items: center;
+ justify-content: center;
     text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 40px #00ff00;
     animation: flicker 1.5s infinite alternate;
   }
