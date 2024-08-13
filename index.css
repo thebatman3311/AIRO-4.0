@@ -418,11 +418,16 @@ footer {
 
 
 #hackerText {
+   padding-top: 40px;
+   padding-left: 10px;
+    width: 100%;
     font-family: "Solway", serif;
   color: white;
- 
+ display: block;
   position: absolute;
   z-index: -1;
+ align-items: center;
+ justify-content: center;
     text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 40px #00ff00;
     animation: flicker 1.5s infinite alternate;
   }
