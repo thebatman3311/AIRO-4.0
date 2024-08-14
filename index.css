@@ -389,6 +389,10 @@ footer {
         font-size: 20px;
     }
 
+    .footer-section .phone-no{
+        justify-content: center;
+    }
+
     .contact p {
         font-size: larger;
         text-align: center;
