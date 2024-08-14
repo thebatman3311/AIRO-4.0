@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    
     color: #fff;
     /* background-image: url('https://t4.ftcdn.net/jpg/07/13/56/41/360_F_713564175_8trBzWxX6MQJiB7DWQkmkDT93PEMkPVV.jpg');
     background-repeat: no-repeat;
@@ -177,6 +177,7 @@ svg:hover {
 }
 
 .right {
+    font-family: "Timmana", sans-serif;
     flex: 1;
     padding: 20px;
     display: flex;
@@ -287,3 +288,4 @@ svg:hover {
         overflow-y: auto; 
     }
 }
+

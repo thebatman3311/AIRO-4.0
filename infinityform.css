@@ -60,7 +60,7 @@ body {
   backdrop-filter: blur(10px);
   overflow: hidden;
   overflow-y: auto;
-  background-image:url(Infinity\ Models.jpg);
+ 
   background-size: cover;
   height: 75vh;
   width: 75vw;

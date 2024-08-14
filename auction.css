@@ -76,6 +76,7 @@ svg:hover {
     width: 500px;
 }
 .right {
+   
     flex: 1;
     padding: 20px;
     display: flex;
