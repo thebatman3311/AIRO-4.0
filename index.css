@@ -315,9 +315,6 @@ footer {
     font-weight: 00;
 }
 
-.contact p{
-    text-align: center;
-}
 
 .socials h2{
     text-align: left;
@@ -424,7 +421,13 @@ footer {
     overflow: hidden;
   }
 
-
+  .phone-no{
+    display:flex;
+    flex:row;
+    align-items: center;
+    text-align: center;
+    
+  }
   #hackerText1 {
     
     padding-left: 10px;
