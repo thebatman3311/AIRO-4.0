@@ -26,6 +26,8 @@ svg:hover {
 }
 
 .heading-reg{
+    margin-top: 10px;
+    line-height: normal;
     display:flex;
     flex-direction: column;
 }
@@ -75,12 +77,9 @@ svg:hover {
     width: 500px;
 }
 .right {
-<<<<<<< HEAD
-   
-=======
-    font-family: "Timmana", sans-serif;
     font-size: 20px;
->>>>>>> 09c5ffadff081daceadf94fe5767c8e8ec92fa0d
+    font-family: "Timmana", sans-serif;
+    line-height: 20px;
     flex: 1;
     padding: 20px;
     display: flex;

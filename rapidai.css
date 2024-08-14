@@ -26,6 +26,8 @@ svg:hover {
 }
 
 .heading-reg{
+    margin-top: 10px;
+    line-height: normal;
     display:flex;
     flex-direction: column;
 }
@@ -75,6 +77,7 @@ svg:hover {
     width: 500px;
 }
 .right {
+    line-height: 20px;
     font-family: "Timmana", sans-serif;
     font-size: 20px;
     flex: 1;
