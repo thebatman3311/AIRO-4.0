@@ -20,6 +20,10 @@ svg {
     transition: fill 0.2s ease ,transform 0.2s ease;
   }
 
+#description h2{
+    line-height: 10px;
+}  
+
 svg:hover {
     fill: #0077B5;
     transform: scale(1.1);
